@@ -1,0 +1,10 @@
+--- libav/libavformat/unix.c	2014-11-03 03:36:20.894906040 -0500
++++ libav.fixed/libavformat/unix.c	2014-11-03 05:33:13.110906040 -0500
+@@ -26,6 +26,7 @@
+  *
+  */
+ 
++#include <linux/socket.h>
+ #include <sys/un.h>
+ 
+ #include "libavutil/avstring.h"
