@@ -9,3 +9,6 @@ install:
     - 7z x -o/opt /opt/android-ndk-r10d-linux-x86_64.bin > /dev/null
 script:
     - make
+    - make libav.tar.gz
+    - mv libav.tar.gz shippable
+archive: true
